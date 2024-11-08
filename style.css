@@ -1,0 +1,231 @@
+/* Base Styles */
+* {
+    font-family: "Outfit", sans-serif;
+    letter-spacing: 0.3px;
+    line-height: 28px;
+    color: hsl(30, 10%, 34%);
+}
+
+hr {
+    width: 100%;
+    border: px solid hsl(30, 18%, 87%);
+    opacity: 0.4;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: "Young Serif";
+    font-size: 40px;
+    font-weight: 500;
+    color: hsl(24, 5%, 18%);
+}
+
+h2 {
+    font-family: "Young Serif";
+    font-weight: 500;
+    font-size: 25px;
+    color: hsl(14, 45%, 36%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.card {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 100px;
+    background-color: white;
+    border-radius: 15px;
+    width: 700px;
+    padding: 40px;
+}
+
+.card-1-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-1-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-1-introduction-preperationtime-card {
+    border-radius: 10px;
+    background-color: hsl(330, 100%, 98%);
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+li {
+    padding-left: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    color: hsl(332, 51%, 32%);
+    font-weight: 900;
+}
+
+.card-1-introduction-ingredients-list li::marker {
+    font-size: 12px;
+}
+
+.preparationtime-descriptionlist li::marker {
+    color: hsl(332, 51%, 32%);
+    font-size: 12px;
+}
+
+.card-2-instructions-procedure li::marker {
+    color: hsl(14, 45%, 36%);
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.preparationtime-descriptionlist li {
+    margin-bottom: 5px;
+}
+
+.card-1-introduction-ingredients {
+    margin-bottom: 30px;
+}
+
+table { 
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+tr > td {
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+tr + tr > td {
+    border-top: 1px solid #dee2e6;
+}
+
+tr > td:last-child {
+    font-weight: 800;
+    color: hsl(14, 45%, 36%);
+}
+
+.card-3-nutrition-table { 
+    margin: 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .card-1-image {
+        height: 200px;
+    }
+
+    .card-1-introduction-preperationtime-card {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        background-color: white;
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .card {
+        background-color: transparent;
+        width: 100%;
+        padding: 30px;
+        margin: -10px;
+        border-radius: 0px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .card-1-image {
+        height: auto;
+        border-radius: 0px;
+    }
+
+    .card-1-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-1-introduction-preperationtime-card {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    tr > td {
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .card-3-nutrition-table {
+        font-size: 18px;
+    }
+}
